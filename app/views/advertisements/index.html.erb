@@ -1,0 +1,7 @@
+<h1>Advertisements</h1>
+<% @advertisements.each do | advertisement| %>
+  <h2> <%= link_to advertisement.title, advertisement_path(advertisement) %></h2>
+  <p>  <%= advertisement.copy %> </p>
+  <p>  <%= advertisement.price %> </p>
+<% end %>
+

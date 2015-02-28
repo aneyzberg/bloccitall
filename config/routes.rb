@@ -1,5 +1,8 @@
 Bloccitall::Application.routes.draw do
+
  resources :posts
+
+ resources :advertisements
 
  get 'about' => 'welcome#about'
 
